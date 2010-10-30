@@ -11,3 +11,4 @@ assert.throws(function() { dbus.createMethodCall('narf', 'barf', 'snarf')});
 
 var msg = dbus.createMethodCall('org.example.NodeDBusTest', '/', 'Method');
 
+msg.marshal();
